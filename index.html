@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio d'Adam VAIRET — Etudiant BTS SIO SISR, passionne de cybersecurite. AFTEC Rennes 2025/2026.">
+  <title>Adam VAIRET — Portfolio BTS SIO SISR</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+
+  <!-- Skip link accessibilite -->
+  <a href="#main" class="skip-link">Aller au contenu principal</a>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="nav-content">
+      <a href="index.html" class="nav-logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        Adam V.
+      </a>
+
+      <div class="nav-links" id="nav-links">
+        <a href="index.html" class="nav-link active">Accueil</a>
+        <a href="html/competences.html" class="nav-link">Competences</a>
+        <a href="html/situations.html" class="nav-link">Situations Pro</a>
+        <a href="html/veille.html" class="nav-link">Veille</a>
+        <a href="html/about.html" class="nav-link">A propos</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Changer de theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+        <button class="btn btn-sm btn-primary" data-modal="contact">Contact</button>
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== CONTACT MODAL ========== -->
+  <div class="modal-overlay" id="contact-modal" role="dialog" aria-modal="true" aria-label="Contact">
+    <div class="modal">
+      <div class="modal-header">
+        <h2 class="gradient-text">Me contacter</h2>
+        <button class="modal-close" aria-label="Fermer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <ul class="contact-list">
+        <li class="contact-item">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          </span>
+          <div class="contact-info">
+            <h4>Telephone</h4>
+            <p>06 31 24 37 82</p>
+          </div>
+        </li>
+        <li class="contact-item">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </span>
+          <div class="contact-info">
+            <h4>Email</h4>
+            <p>adamvairet8@gmail.com</p>
+          </div>
+        </li>
+        <li class="contact-item">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </span>
+          <div class="contact-info">
+            <h4>Localisation</h4>
+            <p>Cornille (35) — Bretagne</p>
+          </div>
+        </li>
+      </ul>
+      <div class="social-links">
+        <a href="#" class="social-link placeholder-badge" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          URL a fournir
+        </a>
+        <a href="#" class="social-link placeholder-badge" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+          URL a fournir
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <main id="main">
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <canvas id="particles-canvas"></canvas>
+      <div class="hero-content animate-on-scroll">
+        <div class="hero-photo placeholder" data-missing="Photo professionnelle HD a fournir">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="64" height="64"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <h1 class="hero-title gradient-text">Adam VAIRET</h1>
+        <p class="hero-subtitle">Etudiant BTS SIO option SISR — AFTEC Rennes</p>
+        <div class="typewriter-container">
+          <span class="typewriter" data-texts="Passionne de cybersecurite|Infrastructure & Reseaux|En alternance BTS SIO SISR"></span>
+        </div>
+        <div class="hero-cta">
+          <a href="html/competences.html" class="btn btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            Decouvrir mon parcours
+          </a>
+          <button class="btn btn-outline" data-modal="contact">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Me contacter
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Presentation -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2 class="gradient-text">Qui suis-je ?</h2>
+          <p>Un parcours atypique, une passion pour la cybersecurite</p>
+        </div>
+        <div class="two-col">
+          <div class="animate-on-scroll">
+            <div class="neo-raised" style="padding: 2rem;">
+              <p class="bio-text">
+                Je m'appelle <strong>Adam VAIRET</strong>, j'ai 20 ans et je suis actuellement en <strong>BTS SIO option SISR</strong> (Solutions d'Infrastructure, Systemes et Reseaux) a l'<strong>AFTEC de Rennes</strong> en alternance.
+              </p>
+              <p class="bio-text" style="margin-top: 1rem;">
+                Apres un baccalaureat general avec specialite <strong>NSI</strong> (Numerique et Sciences Informatiques) et une premiere annee reussie en <strong>BUT GEII</strong> (ou j'ai obtenu la meilleure note de promo : <strong>19,5/20</strong>), je me suis reoriente vers l'informatique reseau et la cybersecurite, un domaine qui me passionne.
+              </p>
+              <div class="placeholder" data-missing="Details alternance a completer" style="margin-top: 1.5rem;">
+                <p class="placeholder-text">Entreprise d'alternance, missions, periode — informations a fournir par Adam.</p>
+              </div>
+            </div>
+          </div>
+          <div class="animate-on-scroll">
+            <div class="neo-raised" style="padding: 2rem;">
+              <h3 style="margin-bottom: 1rem;">En quelques chiffres</h3>
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                <div class="neo-inset" style="padding: 1.25rem; text-align: center;">
+                  <div class="counter gradient-text" data-target="19" data-suffix="/20" style="font-size: 2rem; font-weight: 700;">0</div>
+                  <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 0.25rem;">Meilleure note promo GEII</p>
+                </div>
+                <div class="neo-inset" style="padding: 1.25rem; text-align: center;">
+                  <div class="counter gradient-text" data-target="2" data-suffix=" ans" style="font-size: 2rem; font-weight: 700;">0</div>
+                  <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 0.25rem;">D'etudes superieures</p>
+                </div>
+                <div class="neo-inset" style="padding: 1.25rem; text-align: center;">
+                  <div class="counter gradient-text" data-target="5" data-suffix="+" style="font-size: 2rem; font-weight: 700;">0</div>
+                  <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 0.25rem;">Langages maitrises</p>
+                </div>
+                <div class="neo-inset" style="padding: 1.25rem; text-align: center;">
+                  <div class="gradient-text" style="font-size: 2rem; font-weight: 700;">SISR</div>
+                  <p style="color: var(--text-secondary); font-size: 0.85rem; margin-top: 0.25rem;">Option choisie</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline parcours -->
+    <section class="section" style="background: var(--bg-alt); transition: background-color var(--transition-speed) ease;">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2 class="gradient-text">Mon parcours</h2>
+          <p>De la NSI a la cybersecurite</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot"></div>
+            <span class="timeline-date">2025 — Aujourd'hui</span>
+            <div class="timeline-content">
+              <h3>BTS SIO — Option SISR</h3>
+              <p class="subtitle">AFTEC Rennes — En alternance</p>
+              <p>Formation aux solutions d'infrastructure, systemes et reseaux. Specialisation cybersecurite.</p>
+              <span class="timeline-badge">En cours</span>
+            </div>
+          </div>
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot highlight"></div>
+            <span class="timeline-date">2024 — 2025</span>
+            <div class="timeline-content">
+              <h3>BUT GEII — 1ere annee validee</h3>
+              <p class="subtitle">IUT — Genie Electrique & Informatique Industrielle</p>
+              <p>Premiere annee validee avec brio. Projet S2 : construction et programmation d'une mini console de jeu.</p>
+              <span class="timeline-badge">19,5/20 — Meilleure note promo</span>
+            </div>
+          </div>
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot"></div>
+            <span class="timeline-date">2023 — 2024</span>
+            <div class="timeline-content">
+              <h3>BUT GEII — 1er semestre</h3>
+              <p class="subtitle">Reorientation vers l'option souhaitee</p>
+              <p>Premier semestre suivi, reorientation apres non-selection en option electronique/systemes embarques.</p>
+            </div>
+          </div>
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot"></div>
+            <span class="timeline-date">2023</span>
+            <div class="timeline-content">
+              <h3>Baccalaureat General</h3>
+              <p class="subtitle">Lycee Bertrand d'Argentre — Vitre (35)</p>
+              <p>Specialites NSI (Numerique et Sciences Informatiques) + Anglais, option Mathematiques.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards apercu -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2 class="gradient-text">Explorer</h2>
+          <p>Decouvrez les differentes sections de mon portfolio</p>
+        </div>
+        <div class="cards-grid">
+          <a href="html/competences.html" class="card animate-on-scroll">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3 class="card-title">Competences</h3>
+            <p class="card-text">Mes competences techniques et professionnelles en reseaux, systemes, scripting et cybersecurite.</p>
+            <span class="card-link">Voir les competences
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </span>
+          </a>
+          <a href="html/situations.html" class="card animate-on-scroll">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3 class="card-title">Situations Pro</h3>
+            <p class="card-text">Mes situations professionnelles realisees dans le cadre du BTS SIO : projets, stages et missions.</p>
+            <span class="card-link">Voir les situations
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </span>
+          </a>
+          <a href="html/veille.html" class="card animate-on-scroll">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0118 0"/><path d="M4 4a16 16 0 0118 0"/><path d="M4 18a16 16 0 0018 0"/><circle cx="12" cy="11" r="1"/></svg>
+            </div>
+            <h3 class="card-title">Veille Technologique</h3>
+            <p class="card-text">Ma veille sur les tendances en cybersecurite, reseaux et nouvelles technologies.</p>
+            <span class="card-link">Voir la veille
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Adam VAIRET</h4>
+          <p>Etudiant BTS SIO SISR a l'AFTEC Rennes. Passionne de cybersecurite et d'infrastructure reseau.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Navigation</h4>
+          <div class="footer-links">
+            <a href="index.html">Accueil</a>
+            <a href="html/competences.html">Competences</a>
+            <a href="html/situations.html">Situations Pro</a>
+            <a href="html/veille.html">Veille</a>
+            <a href="html/about.html">A propos</a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <div class="footer-links">
+            <a href="mailto:adamvairet8@gmail.com">adamvairet8@gmail.com</a>
+            <a href="tel:+33631243782">06 31 24 37 82</a>
+            <span style="color: var(--text-secondary); font-size: 0.9rem;">Cornille (35) — Bretagne</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>2025-2026 Adam VAIRET — Portfolio BTS SIO SISR</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
