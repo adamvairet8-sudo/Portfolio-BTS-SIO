@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Competences techniques et professionnelles d'Adam VAIRET — BTS SIO SISR.">
+  <title>Competences — Adam VAIRET</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Aller au contenu principal</a>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="nav-content">
+      <a href="../index.html" class="nav-logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        Adam V.
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="../index.html" class="nav-link">Accueil</a>
+        <a href="competences.html" class="nav-link active">Competences</a>
+        <a href="situations.html" class="nav-link">Situations Pro</a>
+        <a href="veille.html" class="nav-link">Veille</a>
+        <a href="about.html" class="nav-link">A propos</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" aria-label="Changer de theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+        <button class="btn btn-sm btn-primary" data-modal="contact">Contact</button>
+        <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Modal -->
+  <div class="modal-overlay" id="contact-modal" role="dialog" aria-modal="true" aria-label="Contact">
+    <div class="modal">
+      <div class="modal-header">
+        <h2 class="gradient-text">Me contacter</h2>
+        <button class="modal-close" aria-label="Fermer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <ul class="contact-list">
+        <li class="contact-item">
+          <span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></span>
+          <div class="contact-info"><h4>Telephone</h4><p>06 31 24 37 82</p></div>
+        </li>
+        <li class="contact-item">
+          <span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+          <div class="contact-info"><h4>Email</h4><p>adamvairet8@gmail.com</p></div>
+        </li>
+        <li class="contact-item">
+          <span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+          <div class="contact-info"><h4>Localisation</h4><p>Cornille (35) — Bretagne</p></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ========== MAIN ========== -->
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero hero-page">
+      <div class="hero-content animate-on-scroll">
+        <h1 class="hero-title gradient-text">Mes Competences</h1>
+        <p class="hero-subtitle">Competences techniques et professionnelles — BTS SIO SISR</p>
+      </div>
+    </section>
+
+    <!-- Tableau de synthese BTS SIO SISR -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2 class="gradient-text">Tableau de synthese — BTS SIO SISR</h2>
+          <p>Competences du referentiel mobilisees</p>
+        </div>
+
+        <div class="table-container animate-on-scroll">
+          <table class="skills-table">
+            <thead>
+              <tr>
+                <th>Competence</th>
+                <th>Description</th>
+                <th>Contexte / Realisation</th>
+                <th>Niveau</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Gerer le patrimoine informatique</strong></td>
+                <td>Recenser, inventorier les ressources numeriques</td>
+                <td><span class="placeholder-inline">A completer — TP/projet a preciser</span></td>
+                <td><span class="placeholder-inline">Niveau a evaluer</span></td>
+              </tr>
+              <tr>
+                <td><strong>Repondre aux incidents</strong></td>
+                <td>Diagnostiquer, resoudre les incidents de niveau 1 et 2</td>
+                <td><span class="placeholder-inline">A completer — alternance / TP</span></td>
+                <td><span class="placeholder-inline">Niveau a evaluer</span></td>
+              </tr>
+              <tr>
+                <td><strong>Developper la presence en ligne</strong></td>
+                <td>Creer, publier et maintenir un site web</td>
+                <td>Realisation de ce portfolio (HTML/CSS/JS)</td>
+                <td>Acquis</td>
+              </tr>
+              <tr>
+                <td><strong>Travailler en mode projet</strong></td>
+                <td>Planifier, organiser le travail en equipe</td>
+                <td>Projet mini console BUT GEII (19,5/20)</td>
+                <td>Acquis</td>
+              </tr>
+              <tr>
+                <td><strong>Mettre a disposition un service informatique</strong></td>
+                <td>Installer, configurer, deployer des services reseau</td>
+                <td><span class="placeholder-inline">A completer — DHCP/DNS/AD ?</span></td>
+                <td><span class="placeholder-inline">Niveau a evaluer</span></td>
+              </tr>
+              <tr>
+                <td><strong>Securiser les equipements et les usages</strong></td>
+                <td>Proteger les donnees et les acces</td>
+                <td><span class="placeholder-inline">A completer — pare-feu, Wireshark ?</span></td>
+                <td><span class="placeholder-inline">Niveau a evaluer</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="placeholder animate-on-scroll" data-missing="Tableau incomplet — Adam doit preciser les realisations et niveaux" style="margin-top: 2rem;">
+          <p class="placeholder-text">Ce tableau doit etre complete avec les situations professionnelles reelles (alternance, TP, projets) et les niveaux de competence evalues par Adam.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Competences techniques avec progress bars -->
+    <section class="section" style="background: var(--bg-alt); transition: background-color var(--transition-speed) ease;">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2 class="gradient-text">Competences techniques</h2>
+          <p>Langages, systemes, reseaux et securite</p>
+        </div>
+
+        <div class="two-col">
+          <!-- Colonne gauche : Langages & Scripting -->
+          <div>
+            <div class="neo-raised animate-on-scroll" style="padding: 2rem; margin-bottom: 2rem;">
+              <h3 style="margin-bottom: 1.5rem;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" style="vertical-align: middle; margin-right: 0.5rem;"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                Langages & Scripting
+              </h3>
+              <div class="skill-item">
+                <div class="skill-label"><span>Python</span> <span class="skill-percent counter" data-target="65" data-suffix="%">0%</span></div>
+                <div class="progress-container"><div class="progress-bar" data-width="65"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-label"><span>C / C++</span> <span class="skill-percent counter" data-target="60" data-suffix="%">0%</span></div>
+                <div class="progress-container"><div class="progress-bar" data-width="60"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-label"><span>Java</span> <span class="skill-percent counter" data-target="50" data-suffix="%">0%</span></div>
+                <div class="progress-container"><div class="progress-bar" data-width="50"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-label"><span>Bash</span> <span class="skill-percent counter" data-target="45" data-suffix="%">0%</span></div>
+                <div class="progress-container"><div class="progress-bar" data-width="45"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-label"><span>SQL</span> <span class="skill-percent counter" data-target="50" data-suffix="%">0%</span></div>
+                <div class="progress-container"><div class="progress-bar" data-width="50"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-label"><span>HTML / CSS</span> <span class="skill-percent counter" data-target="70" data-suffix="%">0%</span></div>
+                <div class="progress-container"><div class="progress-bar" data-width="70"></div></div>
+              </div>
+              <div class="placeholder" data-missing="Niveaux a confirmer par Adam" style="margin-top: 1rem;">
+                <p class="placeholder-text">Les pourcentages sont estimes. Adam doit preciser ses niveaux reels, projets realises par langage, et SGBD utilises (MySQL, MariaDB, PostgreSQL ?).</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Colonne droite : Reseaux & Systemes -->
+          <div>
+            <div class="neo-raised animate-on-scroll" style="padding: 2rem; margin-bottom: 2rem;">
+              <h3 style="margin-bottom: 1.5rem;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" style="vertical-align: middle; margin-right: 0.5rem;"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                Reseaux & Systemes
+              </h3>
+              <div class="skill-item">
+                <div class="skill-label"><span>Routage / Switching</span> <span class="skill-percent counter" data-target="50" data-suffix="%">0%</span></div>
+                <div class="progress-container"><div class="progress-bar" data-width="50"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-label"><span>DNS / DHCP</span> <span class="skill-percent counter" data-target="55" data-suffix="%">0%</span></div>
+                <div class="progress-container"><div class="progress-bar" data-width="55"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-label"><span>Windows (Client)</span> <span class="skill-percent counter" data-target="65" data-suffix="%">0%</span></div>
+                <div class="progress-container"><div class="progress-bar" data-width="65"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-label"><span>Windows Server / AD</span> <span class="skill-percent counter" data-target="35" data-suffix="%">0%</span></div>
+                <div class="progress-container"><div class="progress-bar" data-width="35"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-label"><span>Linux</span> <span class="skill-percent counter" data-target="40" data-suffix="%">0%</span></div>
+                <div class="progress-container"><div class="progress-bar" data-width="40"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-label"><span>Cybersecurite</span> <span class="skill-percent counter" data-target="35" data-suffix="%">0%</span></div>
+                <div class="progress-container"><div class="progress-bar" data-width="35"></div></div>
+              </div>
+              <div class="placeholder" data-missing="Details techniques a fournir" style="margin-top: 1rem;">
+                <p class="placeholder-text">Preciser : distributions Linux, niveau Windows Server/AD, outils reseau (Cisco Packet Tracer, pfSense, VPN, VLAN), outils secu (Wireshark, pare-feu, audit).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Outils maitrises -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2 class="gradient-text">Outils & Technologies</h2>
+          <p>Environnements et logiciels utilises</p>
+        </div>
+        <div class="tools-grid">
+          <div class="tool-item animate-on-scroll">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            <span>Windows</span>
+          </div>
+          <div class="tool-item animate-on-scroll">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+            <span>Terminal / Bash</span>
+          </div>
+          <div class="tool-item animate-on-scroll">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            <span>SQL</span>
+          </div>
+          <div class="tool-item animate-on-scroll">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            <span>Python</span>
+          </div>
+          <div class="tool-item animate-on-scroll">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>Cybersecurite</span>
+          </div>
+          <div class="tool-item animate-on-scroll">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+            <span>Reseaux</span>
+          </div>
+          <div class="tool-item animate-on-scroll">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+            <span>HTML / CSS</span>
+          </div>
+          <div class="tool-item animate-on-scroll">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/><line x1="12" y1="22" x2="12" y2="15.5"/><polyline points="22 8.5 12 15.5 2 8.5"/></svg>
+            <span>Unreal Engine</span>
+          </div>
+        </div>
+        <div class="placeholder animate-on-scroll" data-missing="Outils supplementaires a preciser" style="margin-top: 2rem;">
+          <p class="placeholder-text">Adam doit preciser : Virtualisation (VirtualBox, VMware, Proxmox ?), outils reseau (Cisco Packet Tracer, GNS3 ?), outils secu (Wireshark, Nmap ?), IDE utilises.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Soft Skills -->
+    <section class="section" style="background: var(--bg-alt); transition: background-color var(--transition-speed) ease;">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2 class="gradient-text">Savoir-etre</h2>
+          <p>Competences transversales et qualites humaines</p>
+        </div>
+        <div class="cards-grid">
+          <div class="card animate-on-scroll">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <h3 class="card-title">Travail en equipe</h3>
+            <p class="card-text">Experience confirmee en projet collaboratif (projet mini console BUT GEII, sport collectif — football).</p>
+          </div>
+          <div class="card animate-on-scroll">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3 class="card-title">Rigueur & Organisation</h3>
+            <p class="card-text">Capacite a structurer et planifier le travail, demontre par l'excellence academique (19,5/20) et l'alternance.</p>
+          </div>
+          <div class="card animate-on-scroll">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            </div>
+            <h3 class="card-title">Adaptabilite</h3>
+            <p class="card-text">Parcours atypique GEII vers SIO, experiences variees (stage international Geneve, usine, logistique) prouvant une grande capacite d'adaptation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Adam VAIRET</h4>
+          <p>Etudiant BTS SIO SISR a l'AFTEC Rennes. Passionne de cybersecurite.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Navigation</h4>
+          <div class="footer-links">
+            <a href="../index.html">Accueil</a>
+            <a href="competences.html">Competences</a>
+            <a href="situations.html">Situations Pro</a>
+            <a href="veille.html">Veille</a>
+            <a href="about.html">A propos</a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <div class="footer-links">
+            <a href="mailto:adamvairet8@gmail.com">adamvairet8@gmail.com</a>
+            <a href="tel:+33631243782">06 31 24 37 82</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>2025-2026 Adam VAIRET — Portfolio BTS SIO SISR</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
