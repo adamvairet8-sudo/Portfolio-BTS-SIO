@@ -1,0 +1,24 @@
+# Versionning
+.git
+.gitignore
+.gitattributes
+
+# Documentation interne (ne doit pas finir dans l'image)
+.claude
+CLAUDE.md
+MISSING-INFO.md
+README.md
+
+# Fichiers Docker eux-memes
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Systeme / editeurs
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode
+.idea
+*.log
+*.tmp

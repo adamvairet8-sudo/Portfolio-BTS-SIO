@@ -1,0 +1,6 @@
+# Les fichiers lus dans un conteneur Linux doivent garder des fins de ligne
+# LF, meme si Git est configure en autocrlf sous Windows.
+Dockerfile          text eol=lf
+.dockerignore       text eol=lf
+docker-compose.yml  text eol=lf
+*.conf              text eol=lf
