@@ -30,8 +30,11 @@ portfolio-code/
     about.html                  # A propos, CV interactif, interets
   assets/
     css/style.css               # Tout le CSS (design system + composants + responsive)
-    js/main.js                  # Tout le JS (theme, animations, modal, curseur, particules)
-  images/                       # Images du projet (actuellement quasi vide)
+    js/main.js                  # Tout le JS (theme, animations, modal, particules)
+  images/                       # Images du projet (favicon.svg)
+  docs/                         # Documents (CV PDF)
+  docker/                       # Config Nginx (prod, dev, en-tetes de securite)
+  Dockerfile, docker-compose.yml  # Conteneurisation — voir DOCKER.md
   MISSING-INFO.md               # Liste des infos qu'Adam doit fournir
   CLAUDE.md                     # Ce fichier
   .claude/                      # Documentation detaillee pour Claude

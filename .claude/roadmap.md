@@ -15,8 +15,8 @@ Voir `MISSING-INFO.md` pour la liste complete.
 - [ ] Developper la fiche du projet mini console (texte + medias)
 - [ ] Developper la fiche Finlab
 - [ ] Lister les projets/TP BTS SIO
-- [ ] Renseigner le(s) theme(s) de veille et sources
-- [ ] Rediger les 3-5 articles de veille commentes
+- [x] Renseigner le theme de veille (automatisation IA n8n + Python) et les sources
+- [x] Rediger les articles de veille commentes (6) — analyses a faire relire/reformuler par Adam
 - [ ] Completer les certifications
 
 ## Priorite 2 : Ameliorations techniques
@@ -25,7 +25,7 @@ Voir `MISSING-INFO.md` pour la liste complete.
 - [ ] Convertir les images en **WebP** (quand elles seront fournies)
 - [ ] Ajouter `loading="lazy"` sur toutes les images
 - [ ] Minifier CSS et JS pour la production
-- [ ] Ajouter un **favicon** (actuellement manquant — `images/favicon.png` reference mais inexistant)
+- [x] Ajouter un **favicon** (`images/favicon.svg`, reprend le logo de la navbar)
 
 ### SEO
 - [ ] Ajouter les meta `og:*` (Open Graph) pour le partage social
@@ -72,7 +72,6 @@ Voir `MISSING-INFO.md` pour la liste complete.
 
 ## Problemes connus
 
-1. **Favicon manquant** : `images/favicon.png` est reference dans le HTML mais le fichier n'existe pas. A creer ou supprimer la balise.
-2. **Duplication navbar/footer/modal** : Le meme HTML est copie dans chaque page. Si on modifie un lien de nav, il faut le faire dans 5 fichiers. Solution future : composant JS ou build step.
-3. **Particles canvas** : Uniquement present sur `index.html`. Si on veut l'ajouter sur d'autres pages, il suffit d'ajouter `<canvas id="particles-canvas"></canvas>` dans le hero.
-4. **`@import` CSS pour la police** : Peut bloquer le rendu. En production, envisager `<link rel="preconnect">` + `<link rel="stylesheet">` dans le HTML a la place.
+1. **Duplication navbar/footer/modal** : Le meme HTML est copie dans chaque page. Si on modifie un lien de nav, il faut le faire dans 5 fichiers. Solution future : composant JS ou build step.
+2. **Particles canvas** : Uniquement present sur `index.html`. Si on veut l'ajouter sur d'autres pages, il suffit d'ajouter `<canvas id="particles-canvas"></canvas>` dans le hero.
+3. **`@import` CSS pour la police** : Peut bloquer le rendu. En production, envisager `<link rel="preconnect">` + `<link rel="stylesheet">` dans le HTML a la place.

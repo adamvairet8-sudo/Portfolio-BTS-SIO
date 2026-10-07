@@ -16,13 +16,8 @@
 - Deux CTA : "Decouvrir mon parcours" (→ competences.html) + "Me contacter" (ouvre modal)
 
 ### Section 2 : "Qui suis-je ?"
-- Layout deux colonnes (`.two-col`)
-- **Colonne gauche** : Texte de presentation (parcours atypique GEII → SIO), **placeholder alternance**
-- **Colonne droite** : 4 chiffres cles dans des carres neo-inset avec compteurs animes :
-  - 19/20 (meilleure note promo GEII)
-  - 2 ans (d'etudes superieures)
-  - 5+ (langages maitrises)
-  - SISR (option choisie)
+- Une seule colonne centree (max 820px) : texte de presentation (parcours atypique GEII → SIO) + **placeholder alternance**
+- (L'ancien bloc "En quelques chiffres" a ete retire a la demande d'Adam)
 
 ### Section 3 : Timeline parcours (fond `--bg-alt`)
 - 4 etapes : BTS SIO (en cours) → BUT GEII annee 1 (highlight, 19.5/20) → BUT GEII S1 → Bac NSI
@@ -96,24 +91,37 @@ Chaque SP est une `.card` pleine largeur avec :
 
 ## html/veille.html — Veille Technologique
 
-### Section 1 : Hero compact
+**Theme unique : l'automatisation par l'IA avec n8n et Python** (opportunites + risques de securite).
+Contenu redige AVEC accents (contrairement au reste du site, encore sans accents).
 
-### Section 2 : Methodologie de veille
-- 4 etapes en grille (`.methodology-steps`) avec compteur CSS automatique :
-  1. Identifier (sources fiables)
-  2. Collecter (RSS, newsletters, reseaux sociaux)
-  3. Analyser (trier et synthetiser)
-  4. Partager (documenter et restituer)
+### Section 1 : Hero compact (sous-titre = intitule du theme)
 
-### Section 3 : Theme(s) de veille (fond `--bg-alt`)
-- **2 placeholders** :
-  - Theme(s) choisi(s) (cybersecurite ? reseaux ? IA ?)
-  - Sources de veille (sites, YouTube, Reddit, newsletters)
+### Section 2 : Mon sujet de veille
+- Encadre `.veille-problem` (problematique) + texte d'intro `.veille-intro`
+- 3 cards : n8n / Python / IA & agents
 
-### Section 4 : Articles & Actualites
-- 3 cartes `.veille-card` empilees (pas de grille) — toutes **placeholder**
-- Chaque carte a : meta (date + source), titre, contenu placeholder
-- Adam doit fournir 3-5 articles avec titre, source, date, resume, avis personnel
+### Section 3 : Les notions cles (fond `--bg-alt`)
+- `.glossary-grid` : Workflow, Declencheur, LLM, Agent IA, MCP, Injection de prompt
+
+### Section 4 : n8n ou Python ?
+- Tableau comparatif `.skills-table.compare-table` (en-tetes de ligne `th[scope=row]`) + encadre "Mon constat"
+
+### Section 5 : Cas d'usage etudie (fond `--bg-alt`)
+- 5 etapes `.methodology-steps` (tri des alertes de securite) + `.two-col` : exemple Python (`.code-block`) / mesures de securite (`.veille-list`)
+- Presente comme cas ETUDIE, pas comme realise par Adam
+
+### Section 6 : Chronologie de l'actualite (`.timeline`, oct. 2025 → oct. 2026)
+
+### Section 7 : Articles analyses (fond `--bg-alt`)
+- 6 `article.veille-card` : meta, titre, tags, `.veille-summary`, encadre `.veille-analysis` ("Mon analyse"), lien source
+- Les analyses sont des propositions a faire reformuler par Adam
+
+### Section 8 : Bilan (3 cards) 
+
+### Section 9 : Methodologie + sources (fond `--bg-alt`)
+- 4 etapes (Identifier, Collecter, Verifier, Exploiter) + 3 cards : sources officielles, cybersecurite, outils (**placeholder**)
+
+Pour ajouter un article : dupliquer un `article.veille-card`, et ajouter l'evenement a la chronologie si pertinent.
 
 ---
 

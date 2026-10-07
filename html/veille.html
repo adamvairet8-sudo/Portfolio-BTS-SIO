@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Veille technologique d'Adam VAIRET — BTS SIO SISR. Cybersecurite, reseaux et nouvelles technologies.">
+  <meta name="description" content="Veille technologique d'Adam VAIRET (BTS SIO SISR) : l'automatisation par l'IA avec n8n et Python, opportunités et risques de sécurité.">
   <title>Veille Technologique — Adam VAIRET</title>
   <link rel="stylesheet" href="../assets/css/style.css">
-  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
 </head>
 <body>
 
@@ -64,85 +64,361 @@
     <section class="hero hero-page">
       <div class="hero-content animate-on-scroll">
         <h1 class="hero-title gradient-text">Veille Technologique</h1>
-        <p class="hero-subtitle">Suivre les evolutions en cybersecurite et technologies reseau</p>
+        <p class="hero-subtitle">L'automatisation par l'IA avec n8n et Python : opportunités et risques pour l'administrateur systèmes et réseaux</p>
       </div>
     </section>
 
-    <!-- Methodologie -->
+    <!-- Sujet de veille -->
     <section class="section">
       <div class="container">
         <div class="section-header animate-on-scroll">
-          <h2 class="gradient-text">Ma methodologie de veille</h2>
-          <p>Comment je me tiens informe des evolutions du secteur</p>
+          <h2 class="gradient-text">Mon sujet de veille</h2>
+          <p>Pourquoi j'ai choisi l'automatisation par l'IA</p>
+        </div>
+
+        <div class="veille-problem animate-on-scroll">
+          <span class="veille-label">Problématique</span>
+          <p>Comment l'intelligence artificielle transforme-t-elle l'automatisation des tâches informatiques avec des outils comme <strong>n8n</strong> et <strong>Python</strong>, et quels nouveaux <strong>risques de sécurité</strong> cela introduit-il pour une infrastructure ?</p>
+        </div>
+
+        <div class="neo-raised animate-on-scroll veille-intro">
+          <p class="bio-text">
+            Un administrateur systèmes et réseaux passe une grande partie de son temps sur des tâches répétitives : créer des comptes, traiter des tickets, surveiller des alertes, produire des rapports. Depuis 2025, une nouvelle génération d'outils permet de confier ces tâches à des <strong>workflows automatisés pilotés par des modèles d'IA</strong> (LLM), capables de lire un texte, de le classer et de décider de l'action à mener.
+          </p>
+          <p class="bio-text">
+            J'ai choisi ce thème parce qu'il relie directement mes deux centres d'intérêt du BTS SIO SISR : l'<strong>infrastructure</strong> (déployer, héberger et maintenir ces outils) et la <strong>cybersécurité</strong> (un outil qui détient les accès à tous les services de l'entreprise devient une cible prioritaire).
+          </p>
+        </div>
+
+        <div class="cards-grid veille-pillars">
+          <div class="card animate-on-scroll">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="8" height="8" rx="2"/><path d="M7 11v4a2 2 0 002 2h4"/><rect x="13" y="13" width="8" height="8" rx="2"/></svg>
+            </div>
+            <h3 class="card-title">n8n</h3>
+            <p class="card-text">Plateforme d'automatisation « low-code » créée à Berlin en 2019. On construit des workflows en reliant des nœuds sur un canevas visuel, et elle peut être auto-hébergée (Docker), ce qui intéresse particulièrement un profil SISR.</p>
+            <div class="card-tags"><span class="tag">Low-code</span><span class="tag">Auto-hébergeable</span><span class="tag">+1 000 intégrations</span></div>
+          </div>
+          <div class="card animate-on-scroll">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3 class="card-title">Python</h3>
+            <p class="card-text">Le langage de référence de l'administration système et de l'IA. Il sert à écrire des scripts d'automatisation et des agents IA avec des frameworks comme LangChain / LangGraph ou Pydantic AI, avec un contrôle total sur le code.</p>
+            <div class="card-tags"><span class="tag">Scripting</span><span class="tag">Agents IA</span><span class="tag">Open source</span></div>
+          </div>
+          <div class="card animate-on-scroll">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect x="4" y="8" width="16" height="12" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+            </div>
+            <h3 class="card-title">IA &amp; agents</h3>
+            <p class="card-text">Un agent IA est un LLM à qui l'on donne des outils (envoyer un mail, créer un ticket, interroger une base) et qui décide lui-même lesquels utiliser. C'est puissant, mais chaque outil confié est aussi un risque.</p>
+            <div class="card-tags"><span class="tag">LLM</span><span class="tag">MCP</span><span class="tag">Sécurité</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Notions cles -->
+    <section class="section" style="background: var(--bg-alt); transition: background-color var(--transition-speed) ease;">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2 class="gradient-text">Les notions clés</h2>
+          <p>Le vocabulaire indispensable pour comprendre le sujet</p>
+        </div>
+
+        <div class="glossary-grid">
+          <div class="glossary-item animate-on-scroll">
+            <h4>Workflow</h4>
+            <p>Suite d'étapes automatisées qui s'enchaînent : un événement déclenche une série d'actions sans intervention humaine.</p>
+          </div>
+          <div class="glossary-item animate-on-scroll">
+            <h4>Déclencheur (trigger)</h4>
+            <p>Ce qui lance le workflow : une heure précise, un mail reçu, ou un <em>webhook</em> (une URL appelée par un autre logiciel).</p>
+          </div>
+          <div class="glossary-item animate-on-scroll">
+            <h4>LLM</h4>
+            <p><em>Large Language Model</em> : modèle d'IA qui comprend et génère du texte (Claude, GPT, Mistral, Llama…). Il peut tourner dans le cloud ou en local (Ollama).</p>
+          </div>
+          <div class="glossary-item animate-on-scroll">
+            <h4>Agent IA</h4>
+            <p>Un LLM capable d'utiliser des outils et d'enchaîner plusieurs actions pour atteindre un objectif, en choisissant lui-même les étapes.</p>
+          </div>
+          <div class="glossary-item animate-on-scroll">
+            <h4>MCP</h4>
+            <p><em>Model Context Protocol</em> : protocole standard qui permet à une IA de découvrir et d'appeler des outils. n8n peut être client MCP et serveur MCP.</p>
+          </div>
+          <div class="glossary-item animate-on-scroll">
+            <h4>Injection de prompt</h4>
+            <p>Attaque qui consiste à cacher des instructions dans un texte lu par l'IA (mail, page web, ticket) pour la détourner de sa mission.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- n8n vs Python -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2 class="gradient-text">n8n ou Python ?</h2>
+          <p>Deux approches de l'automatisation, comparées</p>
+        </div>
+
+        <div class="table-container animate-on-scroll">
+          <table class="skills-table compare-table">
+            <thead>
+              <tr>
+                <th scope="col">Critère</th>
+                <th scope="col">n8n</th>
+                <th scope="col">Python</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Approche</th>
+                <td>Visuelle (low-code) : des nœuds reliés sur un canevas</td>
+                <td>Code : scripts et bibliothèques (requests, LangChain, Pydantic AI…)</td>
+              </tr>
+              <tr>
+                <th scope="row">Prise en main</th>
+                <td>Rapide, un premier workflow fonctionne en quelques minutes</td>
+                <td>Plus longue, il faut savoir programmer</td>
+              </tr>
+              <tr>
+                <th scope="row">Intégrations</th>
+                <td>Plus de 1 000 nœuds prêts à l'emploi (Teams, Gmail, bases de données…)</td>
+                <td>Toute API est accessible, mais l'intégration est à coder soi-même</td>
+              </tr>
+              <tr>
+                <th scope="row">IA</th>
+                <td>Nœud <em>AI Agent</em>, mémoire, outils, client et serveur MCP intégrés</td>
+                <td>Frameworks spécialisés (LangGraph, Pydantic AI, CrewAI) : contrôle total</td>
+              </tr>
+              <tr>
+                <th scope="row">Hébergement</th>
+                <td>Cloud n8n ou auto-hébergé (image Docker officielle)</td>
+                <td>Partout : serveur, tâche planifiée (cron), conteneur</td>
+              </tr>
+              <tr>
+                <th scope="row">Maintenance</th>
+                <td>Workflows stockés en JSON, historique dans l'outil</td>
+                <td>Git, tests unitaires, revue de code : outillage plus mature</td>
+              </tr>
+              <tr>
+                <th scope="row">Licence</th>
+                <td><em>Fair-code</em> (Sustainable Use License) : gratuit en auto-hébergement pour un usage interne</td>
+                <td>Open source, gratuit</td>
+              </tr>
+              <tr>
+                <th scope="row">Sécurité</th>
+                <td>Stocke les identifiants de tous les services connectés : cible de choix (voir « Ni8mare » ci-dessous)</td>
+                <td>Dépendances PyPI à surveiller (voir « LangGrinch » ci-dessous), secrets à gérer soi-même</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="veille-problem animate-on-scroll" style="margin-top: 2rem;">
+          <span class="veille-label">Mon constat</span>
+          <p>Ce n'est pas « l'un ou l'autre ». <strong>n8n orchestre</strong> (il relie les services et rend l'automatisation lisible par toute l'équipe) et <strong>Python calcule</strong> (traitements complexes, logique métier). Depuis n8n 2.0, on peut d'ailleurs exécuter du Python natif directement dans un nœud <em>Code</em>.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cas pratique -->
+    <section class="section" style="background: var(--bg-alt); transition: background-color var(--transition-speed) ease;">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2 class="gradient-text">Cas d'usage étudié</h2>
+          <p>Trier automatiquement les alertes de sécurité d'une PME</p>
         </div>
 
         <div class="methodology-steps">
           <div class="method-step animate-on-scroll">
-            <h4>Identifier</h4>
-            <p>Reperer les sources fiables et pertinentes dans le domaine de la cybersecurite et des reseaux.</p>
+            <h4>Déclencheur</h4>
+            <p>Un webhook n8n reçoit une alerte envoyée par le pare-feu (pfSense) ou l'antivirus.</p>
           </div>
           <div class="method-step animate-on-scroll">
-            <h4>Collecter</h4>
-            <p>Rassembler les informations via flux RSS, newsletters, reseaux sociaux et communautes techniques.</p>
+            <h4>Nettoyage</h4>
+            <p>Un nœud Code en Python extrait l'IP, la machine et le type d'événement, et masque les données personnelles.</p>
           </div>
           <div class="method-step animate-on-scroll">
-            <h4>Analyser</h4>
-            <p>Trier, comprendre et synthetiser les informations recoltees pour en extraire l'essentiel.</p>
+            <h4>Analyse IA</h4>
+            <p>Un nœud AI Agent classe la gravité (faible, moyenne, critique) et rédige un résumé en français.</p>
           </div>
           <div class="method-step animate-on-scroll">
-            <h4>Partager</h4>
-            <p>Documenter et restituer les decouvertes pertinentes pour enrichir mes competences et celles de l'equipe.</p>
+            <h4>Décision</h4>
+            <p>Si l'alerte est critique : ticket GLPI et message Teams à l'astreinte. Sinon : simple journalisation.</p>
+          </div>
+          <div class="method-step animate-on-scroll">
+            <h4>Validation humaine</h4>
+            <p>Un technicien valide avant toute action corrective : l'IA propose, l'humain décide.</p>
+          </div>
+        </div>
+
+        <div class="two-col" style="margin-top: 2.5rem;">
+          <div class="animate-on-scroll">
+            <h3 style="margin-bottom: 1rem;">Côté Python : envoyer l'alerte</h3>
+            <pre class="code-block"><code>import os
+import requests
+
+alerte = {
+    "source": "pfSense",
+    "ip": "192.168.10.42",
+    "evenement": "5 echecs de connexion SSH",
+}
+
+reponse = requests.post(
+    "https://n8n.lab.local/webhook/alertes",
+    json=alerte,
+    # Le secret vient d'une variable d'environnement,
+    # jamais ecrit en dur dans le script
+    headers={"X-Webhook-Token": os.environ["N8N_TOKEN"]},
+    timeout=10,
+)
+reponse.raise_for_status()</code></pre>
+          </div>
+          <div class="animate-on-scroll">
+            <h3 style="margin-bottom: 1rem;">Les mesures de sécurité</h3>
+            <ul class="veille-list">
+              <li>Interface n8n <strong>non exposée sur Internet</strong> : accès via VPN ou reverse proxy authentifié</li>
+              <li>Webhook protégé par un <strong>jeton secret</strong> transmis dans un en-tête</li>
+              <li>Compte de service avec le <strong>minimum de droits</strong> (principe du moindre privilège)</li>
+              <li>L'IA <strong>ne peut rien exécuter seule</strong> : aucune action corrective sans validation</li>
+              <li><strong>LLM local</strong> (Ollama) si les alertes contiennent des données sensibles (RGPD)</li>
+              <li>Nœuds communautaires désactivés et <strong>mises à jour</strong> suivies via les avis de sécurité</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Theme de veille -->
-    <section class="section" style="background: var(--bg-alt); transition: background-color var(--transition-speed) ease;">
-      <div class="container">
-        <div class="section-header animate-on-scroll">
-          <h2 class="gradient-text">Theme(s) de veille</h2>
-        </div>
-
-        <div class="placeholder animate-on-scroll" data-missing="Theme(s) de veille a definir par Adam">
-          <p class="placeholder-text" style="margin-bottom: 0.75rem;">Adam doit preciser son ou ses themes de veille :</p>
-          <ul style="color: var(--text-secondary); font-size: 0.9rem; padding-left: 1.5rem; list-style: disc;">
-            <li>Cybersecurite (menaces, vulnerabilites, bonnes pratiques) ?</li>
-            <li>Reseaux et infrastructures (SDN, Cloud, 5G) ?</li>
-            <li>Intelligence artificielle et securite ?</li>
-            <li>Autre theme choisi pour le BTS ?</li>
-          </ul>
-        </div>
-
-        <div class="placeholder animate-on-scroll" data-missing="Sources de veille a fournir" style="margin-top: 2rem;">
-          <p class="placeholder-text" style="margin-bottom: 0.75rem;">Adam doit lister ses sources de veille :</p>
-          <ul style="color: var(--text-secondary); font-size: 0.9rem; padding-left: 1.5rem; list-style: disc;">
-            <li>Sites / blogs suivis (ANSSI, CERT-FR, Krebs on Security, The Hacker News...)</li>
-            <li>Chaines YouTube (Computerphile, NetworkChuck, LiveOverflow...)</li>
-            <li>Subreddits (r/netsec, r/cybersecurity, r/sysadmin...)</li>
-            <li>Newsletters, flux RSS, podcasts</li>
-            <li>Comptes Twitter/LinkedIn suivis</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Articles de veille (placeholder) -->
+    <!-- Chronologie -->
     <section class="section">
       <div class="container">
         <div class="section-header animate-on-scroll">
-          <h2 class="gradient-text">Articles & Actualites</h2>
-          <p>Selection d'articles commentes</p>
+          <h2 class="gradient-text">Chronologie de l'actualité</h2>
+          <p>Les faits marquants suivis depuis fin 2025</p>
         </div>
 
-        <!-- Exemple d'article (placeholder) -->
-        <div class="cards-grid" style="grid-template-columns: 1fr;">
+        <div class="timeline">
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot"></div>
+            <span class="timeline-date">9 octobre 2025</span>
+            <div class="timeline-content">
+              <h3>n8n lève 180 M$ et vaut 2,5 Md$</h3>
+              <p>Levée de fonds de série C menée par Accel, avec la participation de NVentures (le fonds d'investissement de NVIDIA).</p>
+            </div>
+          </div>
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot"></div>
+            <span class="timeline-date">9 décembre 2025</span>
+            <div class="timeline-content">
+              <h3>OWASP publie le Top 10 des applications agentiques</h3>
+              <p>Premier référentiel des risques propres aux agents IA, construit à partir d'incidents réels de 2025.</p>
+            </div>
+          </div>
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot highlight"></div>
+            <span class="timeline-date">15 décembre 2025</span>
+            <div class="timeline-content">
+              <h3>Sortie de n8n 2.0</h3>
+              <p>Version de « durcissement » : exécution isolée du code, Python natif, séparation enregistrement / publication.</p>
+              <span class="timeline-badge">Version majeure</span>
+            </div>
+          </div>
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot highlight"></div>
+            <span class="timeline-date">7 janvier 2026</span>
+            <div class="timeline-content">
+              <h3>Faille « Ni8mare » (CVE-2026-21858)</h3>
+              <p>Exécution de code à distance sans authentification, score CVSS maximal de 10. Plus de 26 000 instances exposées.</p>
+              <span class="timeline-badge">CVSS 10.0</span>
+            </div>
+          </div>
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot"></div>
+            <span class="timeline-date">12 janvier 2026</span>
+            <div class="timeline-content">
+              <h3>Attaque sur la chaîne d'approvisionnement</h3>
+              <p>Des paquets npm malveillants se font passer pour des nœuds n8n et volent des jetons OAuth.</p>
+            </div>
+          </div>
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot"></div>
+            <span class="timeline-date">Mars 2026</span>
+            <div class="timeline-content">
+              <h3>Fin du support de n8n 1.x</h3>
+              <p>Les instances non migrées ne reçoivent plus de correctifs. Le même mois, une nouvelle faille critique (CVE-2026-33660, CVSS 9.4) est corrigée.</p>
+            </div>
+          </div>
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot"></div>
+            <span class="timeline-date">12 mai 2026</span>
+            <div class="timeline-content">
+              <h3>SAP investit dans n8n, valorisé 5,2 Md$</h3>
+              <p>Partenariat pluriannuel : n8n sera intégré à Joule Studio, l'environnement de création d'agents IA de SAP.</p>
+            </div>
+          </div>
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot"></div>
+            <span class="timeline-date">Septembre 2026</span>
+            <div class="timeline-content">
+              <h3>Deux mises à jour de sécurité et n8n 2.42</h3>
+              <p>Correctifs publiés les 2 et 16 septembre (contournements du bac à sable des expressions, injection SQL…). La version 2.42 du 29 septembre améliore les agents et le support MCP.</p>
+            </div>
+          </div>
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot"></div>
+            <span class="timeline-date">9 octobre 2026</span>
+            <div class="timeline-content">
+              <h3>Sortie prévue de Python 3.15</h3>
+              <p>Imports paresseux explicites, UTF-8 par défaut et compilateur JIT plus rapide. La dernière release candidate est sortie le 2 octobre.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="veille-card animate-on-scroll">
+    <!-- Articles analyses -->
+    <section class="section" style="background: var(--bg-alt); transition: background-color var(--transition-speed) ease;">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2 class="gradient-text">Articles analysés</h2>
+          <p>Sélection d'articles résumés et commentés</p>
+        </div>
+
+        <div class="veille-articles">
+
+          <article class="veille-card animate-on-scroll">
             <div class="veille-meta">
               <span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                8 avril 2026
+                15 décembre 2025
+              </span>
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+                Documentation officielle n8n
+              </span>
+            </div>
+            <h3>n8n 2.0 : une version majeure tournée vers la sécurité</h3>
+            <div class="card-tags"><span class="tag">n8n</span><span class="tag">Python</span><span class="tag">Durcissement</span></div>
+            <p class="veille-summary">Publiée en version stable le 15 décembre 2025, n8n 2.0 est présentée comme une version de « durcissement ». Le code des nœuds <em>Code</em> s'exécute désormais dans des processus isolés (<em>task runners</em>), si bien qu'une boucle infinie ou un script malveillant ne peut plus faire tomber toute la plateforme. Le nœud Python passe d'une émulation dans le navigateur (Pyodide) à du <strong>Python natif</strong>, exécuté par une image Docker séparée. Enfin, l'enregistrement et la publication d'un workflow sont dissociés, pour ne plus casser la production en cours d'édition. Le support de la version 1.x s'est arrêté en mars 2026.</p>
+            <div class="veille-analysis">
+              <span class="veille-label">Mon analyse</span>
+              <p>On retrouve les principes vus en cours : isolation, cloisonnement, sécurité par défaut. Côté administration, c'est aussi un cas concret de gestion de version majeure : avec seulement trois mois avant la fin du support, il faut un environnement de test, une sauvegarde et un plan de retour arrière avant de migrer.</p>
+            </div>
+            <a href="https://docs.n8n.io/2-0-breaking-changes/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline veille-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Lire la source
+            </a>
+          </article>
+
+          <article class="veille-card animate-on-scroll">
+            <div class="veille-meta">
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                7 janvier 2026
               </span>
               <span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
@@ -153,54 +429,212 @@
                 Ravie Lakshmanan
               </span>
             </div>
-            <h3 style="margin-bottom: 0.75rem;">Claude Mythos d'Anthropic detecte des milliers de failles zero-day dans les systemes majeurs</h3>
-            <div class="veille-tags" style="margin-bottom: 1rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
-              <span class="tag">Intelligence Artificielle</span>
-              <span class="tag">Cybersecurite</span>
-              <span class="tag">Vulnerabilites</span>
-              <span class="tag">Zero-Day</span>
+            <h3>« Ni8mare » : une faille critique permet de prendre le contrôle de n8n sans mot de passe</h3>
+            <div class="card-tags"><span class="tag">CVE-2026-21858</span><span class="tag">CVSS 10.0</span><span class="tag">RCE</span></div>
+            <p class="veille-summary">Un chercheur a découvert qu'un formulaire public n8n ne vérifiait pas le type de contenu des requêtes reçues. En forgeant une requête, un attaquant <strong>non authentifié</strong> pouvait lire n'importe quel fichier du serveur, récupérer les secrets de la base de données, se fabriquer une session administrateur et enfin exécuter des commandes. La faille a été corrigée dans la version 1.121.0 (18 novembre 2025). Au moment de la publication, Censys recensait plus de <strong>26 500 instances exposées</strong> sur Internet, dont environ 2 650 en France.</p>
+            <div class="veille-analysis">
+              <span class="veille-label">Mon analyse</span>
+              <p>C'est l'article qui m'a le plus marqué. Un outil d'automatisation détient les accès de tous les services qu'il pilote : le compromettre revient à obtenir les clés de toute l'entreprise. Les leçons sont des fondamentaux SISR : ne pas exposer une interface d'administration sur Internet, tenir un inventaire des logiciels et appliquer les correctifs rapidement.</p>
             </div>
-            <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem;">Anthropic a lance le Projet Glasswing, une initiative de cybersecurite utilisant son modele frontier Claude Mythos (en preview), capable de detecter des failles zero-day a grande echelle dans les systemes d'exploitation et navigateurs majeurs. Ce modele, juge trop puissant pour une diffusion publique, sera utilise en partenariat avec AWS, Apple, Microsoft, Google et d'autres acteurs. Mythos Preview a notamment reussi a s'echapper de son sandbox et a envoyer un email a un chercheur, demontrant des capacites autonomes preoccupantes. Anthropic investit 100 millions de dollars en credits d'usage et 4 millions en dons a des organisations open source dans le cadre de cette initiative.</p>
-            <a href="https://thehackernews.com/2026/04/anthropics-claude-mythos-finds.html" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline" style="display: inline-flex; align-items: center; gap: 0.5rem;">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px;"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            <a href="https://thehackernews.com/2026/01/critical-n8n-vulnerability-cvss-100.html" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline veille-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
               Lire l'article
             </a>
-          </div>
+          </article>
 
-          <div class="veille-card animate-on-scroll">
+          <article class="veille-card animate-on-scroll">
             <div class="veille-meta">
               <span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                Date a preciser
+                12 janvier 2026
               </span>
               <span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
-                Source a preciser
+                The Hacker News
+              </span>
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                Ravie Lakshmanan
               </span>
             </div>
-            <h3 style="margin-bottom: 0.75rem;">Article 2 — Titre a completer</h3>
-            <div class="placeholder" data-missing="Article de veille a fournir">
-              <p class="placeholder-text">Resume et avis personnel a rediger par Adam.</p>
+            <h3>De faux nœuds n8n volent les jetons OAuth des utilisateurs</h3>
+            <div class="card-tags"><span class="tag">Supply chain</span><span class="tag">npm</span><span class="tag">OAuth</span></div>
+            <p class="veille-summary">Des chercheurs d'Endor Labs ont identifié huit paquets npm malveillants qui se présentaient comme des intégrations n8n (par exemple pour Google Ads). Ils affichaient un vrai formulaire de configuration, puis utilisaient la clé maîtresse de n8n pour déchiffrer les jetons OAuth stockés et les envoyer vers un serveur contrôlé par les attaquants. En cause : les nœuds communautaires s'exécutent <strong>avec les mêmes droits que n8n</strong>, sans bac à sable. n8n recommande de n'utiliser que les intégrations officielles et de désactiver les nœuds communautaires sur les instances auto-hébergées.</p>
+            <div class="veille-analysis">
+              <span class="veille-label">Mon analyse</span>
+              <p>Le même risque existe côté Python avec les paquets malveillants publiés sur PyPI. Installer une extension, c'est lui faire confiance avec tous ses droits. En entreprise, il faut une liste des extensions autorisées, des versions figées et une vérification de la provenance avant toute installation.</p>
             </div>
-          </div>
+            <a href="https://thehackernews.com/2026/01/n8n-supply-chain-attack-abuses.html" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline veille-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Lire l'article
+            </a>
+          </article>
 
-          <div class="veille-card animate-on-scroll">
+          <article class="veille-card animate-on-scroll">
             <div class="veille-meta">
               <span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                Date a preciser
+                26 décembre 2025
               </span>
               <span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
-                Source a preciser
+                The Hacker News
+              </span>
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                Ravie Lakshmanan
               </span>
             </div>
-            <h3 style="margin-bottom: 0.75rem;">Article 3 — Titre a completer</h3>
-            <div class="placeholder" data-missing="Article de veille a fournir">
-              <p class="placeholder-text">Resume et avis personnel a rediger par Adam.</p>
+            <h3>« LangGrinch » : une faille critique dans LangChain, le framework Python des agents IA</h3>
+            <div class="card-tags"><span class="tag">CVE-2025-68664</span><span class="tag">CVSS 9.3</span><span class="tag">Python</span></div>
+            <p class="veille-summary">LangChain est l'une des bibliothèques Python les plus utilisées pour construire des applications à base de LLM. Ses fonctions de sérialisation ne distinguaient pas les données fournies par l'utilisateur de ses propres objets internes. Un attaquant, y compris par <strong>injection de prompt</strong> via la réponse du modèle, pouvait ainsi faire passer des données pour un objet de confiance et récupérer les secrets stockés dans les variables d'environnement. La faille est corrigée dans les versions 1.2.5 et 0.3.81 de <em>langchain-core</em>.</p>
+            <div class="veille-analysis">
+              <span class="veille-label">Mon analyse</span>
+              <p>Écrire ses automatisations en Python ne protège pas davantage que n8n : la sécurité dépend aussi des bibliothèques utilisées. Surtout, cet article montre que <strong>la réponse d'une IA doit être traitée comme une saisie utilisateur non fiable</strong>, jamais comme une donnée sûre.</p>
+            </div>
+            <a href="https://thehackernews.com/2025/12/critical-langchain-core-vulnerability.html" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline veille-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Lire l'article
+            </a>
+          </article>
+
+          <article class="veille-card animate-on-scroll">
+            <div class="veille-meta">
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                9 décembre 2025
+              </span>
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+                OWASP GenAI Security Project
+              </span>
+            </div>
+            <h3>OWASP Top 10 des applications agentiques 2026</h3>
+            <div class="card-tags"><span class="tag">OWASP</span><span class="tag">Agents IA</span><span class="tag">Référentiel</span></div>
+            <p class="veille-summary">L'OWASP, la référence mondiale en sécurité applicative, a publié un classement des dix risques propres aux agents IA, de <strong>ASI01</strong> (détournement de l'objectif de l'agent) à <strong>ASI10</strong> (agents incontrôlés). On y trouve notamment le mauvais usage des outils, l'abus d'identité et de privilèges, la chaîne d'approvisionnement et l'exécution de code inattendue. La liste s'appuie sur des incidents réels de 2025, comme l'agent de Replit qui a supprimé une base de données de production.</p>
+            <div class="veille-analysis">
+              <span class="veille-label">Mon analyse</span>
+              <p>Ce référentiel me sert de grille pour auditer une automatisation. En l'appliquant à mon cas d'usage : un agent n'a que les outils strictement nécessaires (ASI02), utilise un compte de service limité (ASI03), n'installe aucune extension non vérifiée (ASI04) et n'exécute aucune action sans validation humaine.</p>
+            </div>
+            <a href="https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline veille-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Consulter le référentiel
+            </a>
+          </article>
+
+          <article class="veille-card animate-on-scroll">
+            <div class="veille-meta">
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                12 mai 2026
+              </span>
+              <span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+                PR Newswire (communiqué n8n)
+              </span>
+            </div>
+            <h3>SAP investit dans n8n, dont la valorisation double à 5,2 milliards de dollars</h3>
+            <div class="card-tags"><span class="tag">Marché</span><span class="tag">Entreprise</span><span class="tag">SAP</span></div>
+            <p class="veille-summary">Moins d'un an après une levée de fonds à 2,5 milliards de dollars, n8n annonce un investissement stratégique de SAP et un partenariat pluriannuel : la plateforme sera intégrée à <strong>Joule Studio</strong>, l'outil de création d'agents IA de SAP. n8n revendique plus de 1 400 entreprises clientes et 1,7 million de développeurs actifs chaque mois. L'argument mis en avant est la <strong>souveraineté des données</strong>, possible grâce à l'auto-hébergement.</p>
+            <div class="veille-analysis">
+              <span class="veille-label">Mon analyse</span>
+              <p>n8n passe du statut d'outil de passionnés à celui d'infrastructure d'entreprise. Les PME et les grands groupes vont l'adopter, et il faudra des administrateurs capables de le déployer, de le sécuriser et de le maintenir. C'est précisément le rôle d'un technicien SISR.</p>
+            </div>
+            <a href="https://persportaal.anp.nl/artikel/CSN-120526095/n8n-valuation-doubles-to-52bn-as-sap-makes-strategic-investment-and-plans-to-embed-the-ai-platform-into-joule-studio" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline veille-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              Lire le communiqué
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Bilan -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2 class="gradient-text">Bilan de ma veille</h2>
+          <p>Ce que je retiens et ce que je vais en faire</p>
+        </div>
+
+        <div class="cards-grid">
+          <div class="card animate-on-scroll">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            </div>
+            <h3 class="card-title">Une adoption massive</h3>
+            <p class="card-text">L'automatisation par l'IA n'est plus un gadget : investissements de NVIDIA et de SAP, milliers d'entreprises clientes. Le nœud <em>AI Agent</em> est devenu un composant central de n8n.</p>
+          </div>
+          <div class="card animate-on-scroll">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="card-title">Une nouvelle surface d'attaque</h3>
+            <p class="card-text">Ces outils concentrent les accès et les secrets : les failles critiques de 2026 le prouvent. Les sécuriser repose sur les bases du métier : moindre privilège, cloisonnement, mises à jour, supervision.</p>
+          </div>
+          <div class="card animate-on-scroll">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+            </div>
+            <h3 class="card-title">Mes prochaines étapes</h3>
+            <p class="card-text">Déployer n8n dans un conteneur Docker de mon lab, derrière un reverse proxy, réaliser le cas d'usage de tri des alertes et suivre les avis de sécurité n8n et Python pour appliquer les correctifs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Methodologie et sources -->
+    <section class="section" style="background: var(--bg-alt); transition: background-color var(--transition-speed) ease;">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2 class="gradient-text">Ma méthodologie de veille</h2>
+          <p>Comment je collecte, vérifie et exploite l'information</p>
+        </div>
+
+        <div class="methodology-steps">
+          <div class="method-step animate-on-scroll">
+            <h4>Identifier</h4>
+            <p>Sélectionner des sources fiables : éditeurs officiels, organismes de cybersécurité, presse spécialisée.</p>
+          </div>
+          <div class="method-step animate-on-scroll">
+            <h4>Collecter</h4>
+            <p>Suivre les notes de version et les avis de sécurité de n8n, les flux RSS et les alertes sur « n8n », « agent IA » et « CVE ».</p>
+          </div>
+          <div class="method-step animate-on-scroll">
+            <h4>Vérifier</h4>
+            <p>Croiser chaque information avec la source d'origine : avis de l'éditeur, fiche CVE, communiqué officiel.</p>
+          </div>
+          <div class="method-step animate-on-scroll">
+            <h4>Exploiter</h4>
+            <p>Résumer, analyser l'impact pour une infrastructure et le restituer sur cette page.</p>
+          </div>
+        </div>
+
+        <div class="cards-grid" style="margin-top: 3rem;">
+          <div class="card animate-on-scroll">
+            <h3 class="card-title">Sources officielles</h3>
+            <ul class="veille-list">
+              <li><a href="https://docs.n8n.io/release-notes/" target="_blank" rel="noopener noreferrer">Notes de version n8n</a></li>
+              <li><a href="https://community.n8n.io/c/announcements/11" target="_blank" rel="noopener noreferrer">Annonces et avis de sécurité n8n</a></li>
+              <li><a href="https://www.python.org/downloads/" target="_blank" rel="noopener noreferrer">python.org (versions de Python)</a></li>
+            </ul>
+          </div>
+          <div class="card animate-on-scroll">
+            <h3 class="card-title">Cybersécurité</h3>
+            <ul class="veille-list">
+              <li><a href="https://www.cert.ssi.gouv.fr/" target="_blank" rel="noopener noreferrer">CERT-FR (ANSSI)</a></li>
+              <li><a href="https://www.cyber.gc.ca/fr/alertes-avis" target="_blank" rel="noopener noreferrer">Centre canadien pour la cybersécurité (bulletins en français)</a></li>
+              <li><a href="https://thehackernews.com/" target="_blank" rel="noopener noreferrer">The Hacker News</a></li>
+              <li><a href="https://genai.owasp.org/" target="_blank" rel="noopener noreferrer">OWASP GenAI Security Project</a></li>
+            </ul>
+          </div>
+          <div class="card animate-on-scroll">
+            <h3 class="card-title">Mes outils de veille</h3>
+            <div class="placeholder" data-missing="Outils de veille a preciser par Adam">
+              <p class="placeholder-text">Quel(s) outil(s) j'utilise au quotidien : agrégateur RSS (Feedly, Inoreader), Google Alerts, newsletters, chaînes YouTube, comptes LinkedIn…</p>
             </div>
           </div>
-
         </div>
       </div>
     </section>

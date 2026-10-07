@@ -5,6 +5,12 @@
 (function () {
   'use strict';
 
+  /* ========== UTILS ========== */
+
+  function prefersReducedMotion() {
+    return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  }
+
   /* ========== THEME MANAGEMENT ========== */
 
   const THEME_KEY = 'adam-portfolio-theme';
@@ -135,6 +141,11 @@
     if (!texts) return;
 
     var phrases = texts.split('|');
+
+    if (prefersReducedMotion()) {
+      el.textContent = phrases[0];
+      return;
+    }
     var phraseIndex = 0;
     var charIndex = 0;
     var isDeleting = false;
@@ -202,23 +213,35 @@
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
           var el = entry.target;
-          var target = parseInt(el.getAttribute('data-target'), 10);
+          var raw = el.getAttribute('data-target');
+          var target = parseFloat(raw);
+          var decimals = raw.indexOf('.') !== -1 ? raw.split('.')[1].length : 0;
           var suffix = el.getAttribute('data-suffix') || '';
           var duration = 1200;
-          var start = 0;
           var startTime = null;
+
+          // Format francais : virgule decimale (19,5)
+          function format(value) {
+            return value.toFixed(decimals).replace('.', ',') + suffix;
+          }
+
+          if (prefersReducedMotion()) {
+            el.textContent = format(target);
+            observer.unobserve(el);
+            return;
+          }
 
           function animate(timestamp) {
             if (!startTime) startTime = timestamp;
             var progress = Math.min((timestamp - startTime) / duration, 1);
             // Ease out quad
             var eased = 1 - (1 - progress) * (1 - progress);
-            var current = Math.floor(eased * target);
-            el.textContent = current + suffix;
+            var factor = Math.pow(10, decimals);
+            el.textContent = format(Math.floor(eased * target * factor) / factor);
             if (progress < 1) {
               requestAnimationFrame(animate);
             } else {
-              el.textContent = target + suffix;
+              el.textContent = format(target);
             }
           }
 
@@ -237,7 +260,7 @@
 
   function initParticles() {
     var canvas = document.getElementById('particles-canvas');
-    if (!canvas) return;
+    if (!canvas || prefersReducedMotion()) return;
 
     var ctx = canvas.getContext('2d');
     var particles = [];
@@ -318,8 +341,10 @@
 
     var openBtns = document.querySelectorAll('[data-modal="contact"]');
     var closeBtns = overlay.querySelectorAll('.modal-close');
+    var lastTrigger = null;
 
-    function open() {
+    function open(e) {
+      lastTrigger = e && e.currentTarget;
       overlay.classList.add('active');
       document.body.style.overflow = 'hidden';
       // Focus trap
@@ -330,6 +355,7 @@
     function close() {
       overlay.classList.remove('active');
       document.body.style.overflow = '';
+      if (lastTrigger) lastTrigger.focus();
     }
 
     openBtns.forEach(function (btn) {

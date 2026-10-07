@@ -110,12 +110,8 @@ Quand Adam fournit une information :
 3. Finlab details (`.placeholder`)
 4. Projets BTS SIO (`.placeholder`)
 
-### veille.html (5 placeholders)
-1. Theme(s) de veille (`.placeholder`)
-2. Sources de veille (`.placeholder`)
-3. Article 1 (`.placeholder`)
-4. Article 2 (`.placeholder`)
-5. Article 3 (`.placeholder`)
+### veille.html (1 placeholder)
+1. Outils de veille utilises (`.placeholder`)
 
 ### about.html (4 placeholders)
 1. Photo bio (`.placeholder`)

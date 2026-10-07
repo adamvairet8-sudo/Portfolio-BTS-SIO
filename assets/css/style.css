@@ -229,6 +229,7 @@ h4 {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  white-space: nowrap;
 }
 
 .nav-logo svg {
@@ -866,7 +867,8 @@ h4 {
 
 .veille-meta {
   display: flex;
-  gap: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
   margin-bottom: 0.75rem;
   font-size: 0.8rem;
   color: var(--text-secondary);
@@ -881,6 +883,159 @@ h4 {
 .veille-meta svg {
   width: 14px;
   height: 14px;
+}
+
+.veille-articles {
+  display: grid;
+  gap: 2rem;
+}
+
+.veille-card h3 {
+  margin-bottom: 0.75rem;
+}
+
+.veille-summary {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin: 1rem 0;
+}
+
+/* Encadre "Mon analyse" / "Problematique" : creuse (inset) dans la carte */
+.veille-analysis,
+.veille-problem {
+  background: var(--bg);
+  box-shadow:
+    inset 4px 4px 10px var(--shadow-dark),
+    inset -4px -4px 10px var(--shadow-light);
+  border-radius: var(--radius-sm);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+  transition: background-color var(--transition-speed) ease;
+}
+
+.veille-problem {
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  padding: 1.5rem 2rem;
+}
+
+.veille-analysis p,
+.veille-problem p {
+  line-height: 1.7;
+}
+
+.veille-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.veille-intro {
+  max-width: 900px;
+  margin: 0 auto 2.5rem;
+  padding: 2rem;
+}
+
+.veille-intro .bio-text + .bio-text {
+  margin-top: 1rem;
+}
+
+.veille-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.veille-link svg {
+  width: 16px;
+  height: 16px;
+}
+
+.veille-list {
+  display: grid;
+  gap: 0.6rem;
+  padding-left: 1.25rem;
+  list-style: disc;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.veille-list li::marker {
+  color: var(--accent);
+}
+
+.veille-list a {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.veille-list a:hover {
+  text-decoration: underline;
+}
+
+/* Glossaire des notions cles */
+.glossary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.glossary-item {
+  padding: 1.5rem;
+  background: var(--bg);
+  box-shadow:
+    4px 4px 10px var(--shadow-dark),
+    -4px -4px 10px var(--shadow-light);
+  border-radius: var(--radius);
+  transition: background-color var(--transition-speed) ease;
+}
+
+.glossary-item h4 {
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+
+.glossary-item p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Tableau comparatif n8n / Python : en-tetes de ligne */
+.compare-table tbody th {
+  padding: 1rem 1.25rem;
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--shadow-dark);
+  vertical-align: top;
+  width: 20%;
+}
+
+.compare-table tbody tr:last-child th {
+  border-bottom: none;
+}
+
+/* Bloc de code (exemple Python) */
+.code-block {
+  overflow-x: auto;
+  padding: 1.5rem;
+  background: var(--bg);
+  box-shadow:
+    inset 4px 4px 10px var(--shadow-dark),
+    inset -4px -4px 10px var(--shadow-light);
+  border-radius: var(--radius-sm);
+  font-family: ui-monospace, 'Cascadia Code', Consolas, monospace;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  transition: background-color var(--transition-speed) ease;
 }
 
 /* ========== ABOUT — INTERESTS ========== */
@@ -976,13 +1131,16 @@ h4 {
   align-items: center;
   justify-content: center;
   opacity: 0;
+  visibility: hidden; /* modal ferme : hors tabulation et lecteurs d'ecran */
   pointer-events: none;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s;
 }
 
 .modal-overlay.active {
   opacity: 1;
+  visibility: visible;
   pointer-events: auto;
+  transition: opacity 0.3s ease, visibility 0s;
 }
 
 .modal {
@@ -1345,6 +1503,11 @@ h4 {
   align-items: start;
 }
 
+/* Empeche un contenu large (bloc de code, tableau) d'elargir la colonne */
+.two-col > * {
+  min-width: 0;
+}
+
 /* ========== BIO SECTION ========== */
 
 .bio-text {
@@ -1454,6 +1617,19 @@ h4 {
   .btn {
     width: 100%;
     justify-content: center;
+  }
+
+  /* Le bouton Contact de la navbar garde sa largeur naturelle */
+  .nav-actions .btn {
+    width: auto;
+  }
+
+  .nav-content {
+    padding: 0 1rem;
+  }
+
+  .nav-actions {
+    gap: 0.5rem;
   }
 
   .hero-photo {

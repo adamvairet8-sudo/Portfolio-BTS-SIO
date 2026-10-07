@@ -68,13 +68,11 @@ Ce projet est un **atout majeur** :
 ## UTILE (enrichissement)
 
 ### Veille Technologique
-- [ ] **Theme(s) choisi(s)** pour la veille BTS
-- [ ] **Sources consultees** (sites, YouTube, Reddit, newsletters, RSS)
-- [ ] **3 a 5 articles/actualites recentes** avec pour chacun :
-  - Titre
-  - Source et date
-  - Resume
-  - Avis / analyse personnel d'Adam
+- [x] **Theme choisi** : l'automatisation par l'IA avec n8n et Python (opportunites et risques de securite)
+- [x] **Sources consultees** : n8n (release notes, avis de securite), python.org, CERT-FR, Centre canadien cyber, The Hacker News, OWASP GenAI
+- [x] **6 articles commentes** (n8n 2.0, Ni8mare, supply chain, LangGrinch, OWASP agentique, SAP) + chronologie
+- [ ] **Relecture des « Mon analyse »** — redigees comme proposition : Adam doit les relire et les reformuler avec ses mots (le jury l'interrogera dessus)
+- [ ] **Outils de veille utilises** (Feedly, Inoreader, Google Alerts, newsletters, YouTube…) — placeholder sur la page
 
 ### Certifications
 - [ ] **Certifications en cours ou prevues** (Cisco CCNA ? Microsoft ? CompTIA ?)
@@ -86,7 +84,7 @@ Ce projet est un **atout majeur** :
 
 ### Design
 - [ ] **La palette violet/bleu du CV convient-elle** comme identite visuelle ?
-- [ ] **Favicon personnalise** (actuellement manquant)
+- [x] **Favicon personnalise** — `images/favicon.svg` (logo navbar), a remplacer si Adam en veut un autre
 
 ---
 
